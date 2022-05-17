@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eo pipefail
+# set -eo pipefail
 
 readonly GALAXY_YML='galaxy.yml'
 readonly UPSTREAM_NS='middleware_automation'
@@ -12,7 +12,6 @@ readonly -A UPSTREAM_TO_DOWNSTREAM_NAMES
 UPSTREAM_TO_DOWNSTREAM_NAMES["${UPSTREAM_NS}.wildfly"]='redhat.jboss_eap'
 UPSTREAM_TO_DOWNSTREAM_NAMES["${UPSTREAM_NS}.infinispan"]='redhat.jboss_data_grid'
 UPSTREAM_TO_DOWNSTREAM_NAMES["${UPSTREAM_NS}.keycloak"]='redhat.rh_sso'
-
 echo GIT_REPOSITORY_URL: "${GIT_REPOSITORY_URL}"
 echo GIT_REPOSITORY_BRANCH: "${GIT_REPOSITORY_BRANCH}"
 echo WORKDIR: "${WORKDIR}"
