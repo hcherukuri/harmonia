@@ -1,9 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
-# set -eo pipefail
-=======
-set -xeo pipefail
->>>>>>> e190e39 (Ensure script does not crash if no occurences of the redhat.wildfly collection is found.)
 
 readonly GALAXY_YML='galaxy.yml'
 readonly UPSTREAM_NS='middleware_automation'
